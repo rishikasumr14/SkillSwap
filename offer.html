@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Offer a Skill - SkillSwap</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SkillSwap
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="skills.html">
+                Find Skills
+            </a>
+
+            <a href="offer.html">
+                Offer a Skill
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="offer-section">
+
+        <div class="offer-card">
+
+            <h1>
+                Offer a Skill
+            </h1>
+
+            <p class="offer-subtitle">
+                Share your knowledge with other students.
+            </p>
+
+
+            <form id="offerForm">
+
+
+                <label for="offeredSkill">
+                    Skill Name
+                </label>
+
+                <input
+                    type="text"
+                    id="offeredSkill"
+                    placeholder="Example: Python"
+                    required
+                >
+
+
+                <label for="skillCategory">
+                    Category
+                </label>
+
+                <select
+                    id="skillCategory"
+                    required
+                >
+
+                    <option value="">
+                        Select Category
+                    </option>
+
+                    <option value="Programming">
+                        Programming
+                    </option>
+
+                    <option value="Web Development">
+                        Web Development
+                    </option>
+
+                    <option value="Design">
+                        Design
+                    </option>
+
+                    <option value="Photography">
+                        Photography
+                    </option>
+
+                    <option value="Communication">
+                        Communication
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label for="skillDescription">
+                    Description
+                </label>
+
+                <textarea
+                    id="skillDescription"
+                    rows="5"
+                    placeholder="What will you teach?"
+                    required
+                ></textarea>
+
+
+                <label for="experienceLevel">
+                    Experience Level
+                </label>
+
+                <select
+                    id="experienceLevel"
+                    required
+                >
+
+                    <option value="">
+                        Select Experience
+                    </option>
+
+                    <option value="Beginner">
+                        Beginner
+                    </option>
+
+                    <option value="Intermediate">
+                        Intermediate
+                    </option>
+
+                    <option value="Advanced">
+                        Advanced
+                    </option>
+
+                </select>
+
+
+                <!-- VIDEO -->
+
+                <label for="teachingVideo">
+                    Teaching Video 🎥
+                </label>
+
+                <p class="upload-info">
+                    Upload a short video demonstrating
+                    what you can teach.
+                </p>
+
+
+                <input
+                    type="file"
+                    id="teachingVideo"
+                    accept="video/*"
+                >
+
+
+                <div
+                    id="videoPreview"
+                    class="video-preview"
+                >
+
+                    <p>
+                        No video selected.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Add My Skill
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 SkillSwap | Learn • Share • Grow
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Find Skills - SkillSwap</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SkillSwap
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="skills.html">
+                Find Skills
+            </a>
+
+            <a href="offer.html">
+                Offer a Skill
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="skills-section">
+
+        <h1>
+            Find a Skill
+        </h1>
+
+        <p>
+            Discover skills taught by other students.
+        </p>
+
+
+        <input
+            type="text"
+            id="skillSearch"
+            class="skill-search"
+            placeholder="Search for a skill..."
+            onkeyup="searchSkills()"
+        >
+
+
+        <div
+            class="skills-container"
+            id="skillsContainer"
+        >
+
+
+            <!-- PYTHON -->
+
+            <div
+                class="skill-card"
+                data-skill="Python"
+            >
+
+                <h2>
+                    Python
+                </h2>
+
+                <p>
+                    Learn Python programming from basics.
+                </p>
+
+                <p>
+                    <strong>
+                        Teacher:
+                    </strong>
+                    Ananya
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="requestSkill('Python','Ananya')"
+                >
+                    Request Skill
+                </button>
+
+            </div>
+
+
+
+            <!-- C++ -->
+
+            <div
+                class="skill-card"
+                data-skill="C++"
+            >
+
+                <h2>
+                    C++
+                </h2>
+
+                <p>
+                    Learn C++ and object-oriented programming.
+                </p>
+
+                <p>
+                    <strong>
+                        Teacher:
+                    </strong>
+                    Rahul
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="requestSkill('C++','Rahul')"
+                >
+                    Request Skill
+                </button>
+
+            </div>
+
+
+
+            <!-- WEB DEVELOPMENT -->
+
+            <div
+                class="skill-card"
+                data-skill="Web Development"
+            >
+
+                <h2>
+                    Web Development
+                </h2>
+
+                <p>
+                    Learn HTML, CSS and JavaScript.
+                </p>
+
+                <p>
+                    <strong>
+                        Teacher:
+                    </strong>
+                    Priya
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="requestSkill('Web Development','Priya')"
+                >
+                    Request Skill
+                </button>
+
+            </div>
+
+
+
+            <!-- DESIGN -->
+
+            <div
+                class="skill-card"
+                data-skill="Graphic Design"
+            >
+
+                <h2>
+                    Graphic Design
+                </h2>
+
+                <p>
+                    Learn basic graphic design skills.
+                </p>
+
+                <p>
+                    <strong>
+                        Teacher:
+                    </strong>
+                    Arjun
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="requestSkill('Graphic Design','Arjun')"
+                >
+                    Request Skill
+                </button>
+
+            </div>
+
+
+
+            <!-- PHOTOGRAPHY -->
+
+            <div
+                class="skill-card"
+                data-skill="Photography"
+            >
+
+                <h2>
+                    Photography
+                </h2>
+
+                <p>
+                    Learn photography basics and techniques.
+                </p>
+
+                <p>
+                    <strong>
+                        Teacher:
+                    </strong>
+                    Neha
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="requestSkill('Photography','Neha')"
+                >
+                    Request Skill
+                </button>
+
+            </div>
+
+
+
+            <!-- PUBLIC SPEAKING -->
+
+            <div
+                class="skill-card"
+                data-skill="Public Speaking"
+            >
+
+                <h2>
+                    Public Speaking
+                </h2>
+
+                <p>
+                    Improve communication and presentation skills.
+                </p>
+
+                <p>
+                    <strong>
+                        Teacher:
+                    </strong>
+                    Aditya
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="requestSkill('Public Speaking','Aditya')"
+                >
+                    Request Skill
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 SkillSwap | Learn • Share • Grow
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard - SkillSwap</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SkillSwap
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="skills.html">
+                Find Skills
+            </a>
+
+            <a href="offer.html">
+                Offer a Skill
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="requests.html">
+                Requests
+            </a>
+
+            <button
+                onclick="logout()"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="dashboard">
+
+        <h1>
+            Welcome,
+            <span id="dashboardName">
+                Student
+            </span>
+            👋
+        </h1>
+
+
+        <p>
+            Manage your learning and teaching activities.
+        </p>
+
+
+
+        <!-- SUMMARY -->
+
+        <div class="dashboard-summary">
+
+
+            <div class="summary-card">
+
+                <h3>
+                    I Can Teach
+                </h3>
+
+                <p id="dashboardTeachSkill">
+                    -
+                </p>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <h3>
+                    I Want To Learn
+                </h3>
+
+                <p id="dashboardLearnSkill">
+                    -
+                </p>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Requests
+                </h3>
+
+                <p id="dashboardRequests">
+                    0
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- QUICK ACTIONS -->
+
+        <h2 class="section-title">
+            Quick Actions
+        </h2>
+
+
+        <div class="quick-actions">
+
+
+            <a
+                href="skills.html"
+                class="action-card"
+            >
+
+                <span>
+                    🔍
+                </span>
+
+                <h3>
+                    Find Skills
+                </h3>
+
+                <p>
+                    Find students who can teach you.
+                </p>
+
+            </a>
+
+
+
+            <a
+                href="offer.html"
+                class="action-card"
+            >
+
+                <span>
+                    🎓
+                </span>
+
+                <h3>
+                    Offer a Skill
+                </h3>
+
+                <p>
+                    Share a skill you know.
+                </p>
+
+            </a>
+
+
+
+            <a
+                href="requests.html"
+                class="action-card"
+            >
+
+                <span>
+                    🤝
+                </span>
+
+                <h3>
+                    View Requests
+                </h3>
+
+                <p>
+                    Check your skill requests.
+                </p>
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- MY SKILLS -->
+
+        <h2 class="section-title">
+            My Skills
+        </h2>
+
+
+        <div class="my-skills">
+
+
+            <div class="skill-info">
+
+                <h3>
+                    Teaching
+                </h3>
+
+                <p id="myTeachSkill">
+                    -
+                </p>
+
+            </div>
+
+
+
+            <div class="skill-info">
+
+                <h3>
+                    Learning
+                </h3>
+
+                <p id="myLearnSkill">
+                    -
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 SkillSwap | Learn • Share • Grow
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
